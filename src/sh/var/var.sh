@@ -1,0 +1,1 @@
+dir=~/bac/neovim.bac
