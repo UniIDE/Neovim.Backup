@@ -2,8 +2,8 @@
 
 compress(){
 	cd $dir
-	if [ ! -f $bac.tgz ];then
-		tar cfvz $bac.tgz $bac
+	if [ ! -f $tar_file ];then
+		tar cfvz $tar_file $bac
 		echo "Backup Compressed"
 	else
 		echo "Existing Backup.tgz Delete to Recompress"

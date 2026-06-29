@@ -1,5 +1,6 @@
 . lib/var/var.sh
 . lib/decompress.sh
+. lib/backup_volume.sh
 
 sync="rsync -avz --progress --delete"
 
@@ -32,6 +33,7 @@ git_config(){
 }
 
 main(){
+	from_backup_volume
 	decompress
 	locals
 	cache

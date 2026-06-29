@@ -1,5 +1,6 @@
 . lib/var/var.sh
 . lib/compress.sh
+. lib/backup_volume.sh
 
 sync="rsync -avz --progress --delete"
 
@@ -26,6 +27,7 @@ main(){
 	cache
 	#config
 	compress
+	to_backup_volume
 }
 
 main
